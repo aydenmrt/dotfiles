@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="SmartImportWizard">
+		<item key="SmartImportRootWizardPage.STORE_HIDE_ALREADY_OPEN" value="false"/>
+		<item key="SmartImportRootWizardPage.STORE_CLOSE_IMPORTED" value="false"/>
+		<item key="SmartImportRootWizardPage.STORE_NESTED_PROJECTS" value="true"/>
+		<item key="SmartImportRootWizardPage.STORE_CONFIGURE_NATURES" value="true"/>
+		<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+			<item value="/Users/ayden/Learning/TutoJava/Strings"/>
+			<item value="/Users/ayden/Learning/TutoJava/LibftJava"/>
+			<item value="/Users/ayden/Learning/TutoJava/Flottants"/>
+			<item value="/Users/ayden/Learning/TutoJava/03-NombresBinaire"/>
+			<item value="/Users/ayden/Learning/TutoJava/01-HelloWorld"/>
+			<item value="/Users/ayden/Learning/TutoJava/02-SyntaxeDeBase"/>
+			<item value="/Users/ayden/eclipse-workspace/Tuto"/>
+		</list>
+	</section>
+</section>
