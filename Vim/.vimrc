@@ -59,3 +59,7 @@ autocmd FileType tex nmap <buffer> T :!open -a Skim %:r.pdf<CR><CR>
 autocmd bufnewfile *.tex 0r ~/.vim/templates/tex.skel
 autocmd  BufNewFile ~/vimwiki/diary/*.wiki :silent 0r !~/.vim/bin/generate-vimwiki-diary-template '%'
 
+let g:calendar_frame = 'default'
+let g:calendar_google_calendar = 1
+let g:calendar_google_task = 1
+source ~/.cache/calendar.vim/credentials.vim
