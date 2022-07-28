@@ -49,6 +49,7 @@ imap <right> <nop>
 call plug#begin()
 Plug 'lervag/vimtex'
 Plug 'vimwiki/vimwiki'
+Plug 'rhysd/open-pdf.vim'
 call plug#end()
 
 " Mappings for compiling Latex file
@@ -56,8 +57,8 @@ autocmd FileType tex nmap <buffer> <C-T> :!latexmk -pdf %<CR>
 autocmd FileType tex nmap <buffer> T :!open -a Skim %:r.pdf<CR><CR>
 
 "Generate templates at opening files of specify format
-autocmd bufnewfile *.tex 0r ~/.vim/templates/tex.skel
-autocmd  BufNewFile ~/vimwiki/diary/*.wiki :silent 0r !~/.vim/bin/generate-vimwiki-diary-template '%'
+autocmd bufnewfile *.tex 0r ~/dotfiles/Vim/tex.skel
+autocmd  BufNewFile ~/vimwiki/diary/*.wiki :silent 0r !~/dotfiles/Vim/generate-vimwiki-diary-template '%'
 
 let g:calendar_frame = 'default'
 let g:calendar_google_calendar = 1

@@ -1,0 +1,7 @@
+\UseRawInputEncoding
+\documentclass[a4paper,11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[english,french]{babel}
+
+\end{document}
