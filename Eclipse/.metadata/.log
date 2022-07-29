@@ -5839,3 +5839,6 @@ Binding(ALT+COMMAND+R,
 
 !ENTRY net.sourceforge.vrapper.eclipse 1 0 2022-07-29 06:23:17.030
 !MESSAGE No .vrapperrc or _vrapperrc found.
+
+!ENTRY org.eclipse.ui 2 2 2022-07-29 07:17:11.624
+!MESSAGE Invalid property category path: org.eclipse.cdt.managedbuilder.ui.properties.Page_head_build (bundle: org.eclipse.cdt.ui, propertyPage: org.eclipse.cdt.managedbuilder.ui.properties.BuildLogPreferencePage)

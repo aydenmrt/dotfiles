@@ -130,7 +130,7 @@ title=Bilan
 \end{itemize}
 }
 
-\begin{lstlisting}[backgroundcolor=\color{lightgray}]
+\begin{lstlisting}[backgroundcolor=\color{lightgray}, title={Mon Titre}]
 public class Start {
 
 	public static void main(String[] args) {
