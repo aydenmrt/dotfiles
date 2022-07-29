@@ -1,7 +1,31 @@
 \documentclass[a4paper]{article} 
 \usepackage{silence}
 \WarningsOff[everypage]
+
+\usepackage{color}
+\usepackage{listings}
+\usepackage{xcolor}
 \usepackage{tcolorbox}
+
+\definecolor{javared}{rgb}{0.6,0,0} % for strings
+\definecolor{javagreen}{rgb}{0.25,0.5,0.35} % comments
+\definecolor{javapurple}{rgb}{0.5,0,0.35} % keywords
+\definecolor{javadocblue}{rgb}{0.25,0.35,0.75} % javadoc
+
+\lstset{language=Java,
+basicstyle=\ttfamily,
+keywordstyle=\color{javapurple}\bfseries,
+stringstyle=\color{javared},
+commentstyle=\color{javagreen},
+morecomment=[s][\color{javadocblue}]{/**}{*/},
+numbers=left,
+numberstyle=\tiny\color{black},
+stepnumber=1,
+numbersep=20pt,
+tabsize=4,
+showspaces=false,
+showstringspaces=false}
+
 \tcbuselibrary{skins}
 \author{}
 \title{
@@ -106,6 +130,14 @@ title=Bilan
 \end{itemize}
 }
 
+\begin{lstlisting}[backgroundcolor=\color{lightgray}]
+public class Start {
+
+	public static void main(String[] args) {
+		System.out.println("Bouh!");
+	}
+}
+\end{lstlisting}
 \summary{Bilan}
 \end{document}
 
