@@ -1,4 +1,3 @@
-let g:airline_theme='monochrome'
 syntax on
 filetype plugin indent on
 set nocompatible
@@ -47,9 +46,9 @@ imap <right> <nop>
 "Plugin manager"
 
 call plug#begin()
-Plug 'lervag/vimtex'
 Plug 'vimwiki/vimwiki'
 Plug 'rhysd/open-pdf.vim'
+Plug 'lervag/vimtex'
 call plug#end()
 
 " Mappings for compiling Latex file
@@ -64,3 +63,5 @@ let g:calendar_frame = 'default'
 let g:calendar_google_calendar = 1
 let g:calendar_google_task = 1
 source ~/.cache/calendar.vim/credentials.vim
+
+let g:vimtex_view_method = 'skim'
