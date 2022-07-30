@@ -65,3 +65,4 @@ let g:calendar_google_task = 1
 source ~/.cache/calendar.vim/credentials.vim
 
 let g:vimtex_view_method = 'skim'
+let g:calendar_views = [ 'year', 'month', 'agenda', 'day_3', 'clock' ]
