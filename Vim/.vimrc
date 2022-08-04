@@ -18,7 +18,6 @@ set smartcase 		  " Si une recherche contient une majuscule,
 set incsearch             " Surligne les resultats de recherche pendant la" saisie
 set hlsearch              " Surligne les resultats de recherche" 
 
-"" Beep
 set visualbell t_vb=           " Empeche Vim de beeper
 autocmd GUIEnter * set visualbell t_vb=
 set noerrorbells          " Empeche Vim de beeper
@@ -29,15 +28,6 @@ set backspace=indent,eol,start
 set hidden
 
 "" Raccourcis
-" Desactiver les touches directionnelles
-map <up> <nop>
-map <down> <nop>
-map <left> <nop>
-map <right> <nop>
-imap <up> <nop>
-imap <down> <nop>
-imap <left> <nop>
-imap <right> <nop>
 
 " Utiliser ;; pour 'Esc'
 :imap ;; <Esc>
@@ -49,6 +39,9 @@ call plug#begin()
 Plug 'vimwiki/vimwiki'
 Plug 'rhysd/open-pdf.vim'
 Plug 'lervag/vimtex'
+Plug 'ZeroKnight/vim-signjump'
+Plug 'kshenoy/vim-signature' 
+Plug 'junegunn/goyo.vim'
 call plug#end()
 
 " Mappings for compiling Latex file
@@ -66,3 +59,41 @@ source ~/.cache/calendar.vim/credentials.vim
 
 let g:vimtex_view_method = 'skim'
 let g:calendar_views = [ 'year', 'month', 'agenda', 'day_3', 'clock' ]
+
+au bufNewFile *.java ks|call CreaFich()|'s
+fun CreaFich()
+set filetype=java
+execute("r! echo \"//Fichier: \"%")
+execute("r! echo \"//Crée le \"".strftime("%d %b %Y %X"))
+execute("r! echo \"//Dernière modification: \"".strftime("%d %b %Y %X"))
+endfun[/code]
+
+"sign define information text=>>
+"map <up> :exe ":sign place 123 line=" . line('.') ." name=information file=" . expand('%:p')<CR>
+"map <down> :sign unplace<CR>
+"map <left> :sign jump 123 buffer=1<CR>
+
+      let g:SignatureMap = {
+        \ 'Leader'             :  "m,",
+        \ 'PlaceNextMark'      :  "<up>",
+        \ 'ToggleMarkAtLine'   :  "m.",
+        \ 'PurgeMarksAtLine'   :  "<down>",
+        \ 'DeleteMark'         :  "dm",
+        \ 'PurgeMarks'         :  "m<Space>",
+        \ 'PurgeMarkers'       :  "m<BS>",
+        \ 'GotoNextLineAlpha'  :  "<right>",
+        \ 'GotoPrevLineAlpha'  :  "<left>",
+        \ 'GotoNextSpotAlpha'  :  "`]",
+        \ 'GotoPrevSpotAlpha'  :  "`[",
+        \ 'GotoNextLineByPos'  :  "]'",
+        \ 'GotoPrevLineByPos'  :  "['",
+        \ 'GotoNextSpotByPos'  :  "]`",
+        \ 'GotoPrevSpotByPos'  :  "[`",
+        \ 'GotoNextMarker'     :  "<right>",
+        \ 'GotoPrevMarker'     :  "<left>>",
+        \ 'GotoNextMarkerAny'  :  "]=",
+        \ 'GotoPrevMarkerAny'  :  "[=",
+        \ 'ListBufferMarks'    :  "m/",
+        \ 'ListBufferMarkers'  :  "m?"
+        \ }
+<

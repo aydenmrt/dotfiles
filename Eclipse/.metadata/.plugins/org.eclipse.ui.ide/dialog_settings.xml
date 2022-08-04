@@ -6,6 +6,8 @@
 		<item key="SmartImportRootWizardPage.STORE_NESTED_PROJECTS" value="true"/>
 		<item key="SmartImportRootWizardPage.STORE_CONFIGURE_NATURES" value="true"/>
 		<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+			<item value="/Users/ayden/Learning/Java/LJWGames/ShowMessage/showmessage2"/>
+			<item value="/Users/ayden/Learning/Java/LJWGames/showmessage"/>
 			<item value="/Users/ayden/Learning/TutoJava/Strings"/>
 			<item value="/Users/ayden/Learning/TutoJava/LibftJava"/>
 			<item value="/Users/ayden/Learning/TutoJava/Flottants"/>
